@@ -14,7 +14,7 @@ function RepoCard(props: repoProps) {
     )
 }
 
-const rowStyles:any = {
+const rowStyles:Object = {
     textAlign: "left",
     color: "black",
     backgroundColor: "lightgray",

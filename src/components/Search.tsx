@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import RepoCard from "./RepoCard";
 
 interface repoDetailProp {
@@ -12,7 +12,7 @@ function Search() {
     const [repos, setRepos] = useState<repoDetailProp[]>([]);
     
     function handleSubmit(username:string){
-        var url:string = `https://api.github.com/users/${username}/repos`;
+        const url:string = `https://api.github.com/users/${username}/repos`;
         fetch(url)
             .then(response => response.json())
             .then(responseJson => {

@@ -1,5 +1,5 @@
 interface headerProps {
-    text: String;
+    text: string;
 }
 
 function Header(props : headerProps) {
