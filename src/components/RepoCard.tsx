@@ -1,6 +1,11 @@
-import Card from 'react-bootstrap/Card'
+interface repoProps {
+    children: string;
+    key: number;
+    name: String;
+    description?: String;
+}
 
-function RepoCard(props) {
+function RepoCard(props: repoProps) {
     return (
         <div style={rowStyles} className="row">
             <h2 style={{color: "blue"}}>{props.name}</h2>
@@ -9,7 +14,7 @@ function RepoCard(props) {
     )
 }
 
-const rowStyles = {
+const rowStyles:any = {
     textAlign: "left",
     color: "black",
     backgroundColor: "lightgray",

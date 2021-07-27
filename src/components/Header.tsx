@@ -1,4 +1,8 @@
-function Header(props) {
+interface headerProps {
+    text: String;
+}
+
+function Header(props : headerProps) {
     return (
         <div>
             <h1>{props.text}</h1>
